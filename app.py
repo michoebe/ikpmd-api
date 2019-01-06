@@ -21,6 +21,7 @@ class Item(Resource):
         data = Item.parser.parse_args()
         items.append(data['item'])
         print("Posting:", data['item'])
+        print("Posting:", data['item'])
         return {'items': items}
 
     def delete(self):
